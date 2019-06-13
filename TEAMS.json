@@ -1,0 +1,134 @@
+{
+  "teams": [
+    {
+      "teamName": "team A",
+      "players": [
+        {
+          "name": "Bato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 8,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "Beto",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 7,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "Bito",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 5,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "Boto",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 3,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "Buto",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 9,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "tato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "tato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        }
+      ],
+      "coach": {
+        "coachName": "tintin",
+        "aboutCoach": "blablablablabalbalksabdalkfbaklfjasklfalkjalkfjalkfjadklfjkladfj"
+      }
+    },
+    {
+      "teamName": "team B",
+      "players": [
+        {
+          "name": "cato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "teto",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "tito",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "tato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "tato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "tato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        },
+        {
+          "name": "tato",
+          "photo": "sss.jpg",
+          "matchesPlayed": 2,
+          "goals": 2,
+          "cleanSheets": 0,
+          "position": "fw"
+        }
+      ],
+      "coach": {
+        "coachName": "tintin",
+        "aboutCoach": "blablablablabalbalksabdalkfbaklfjasklfalkjalkfjalkfjadklfjkladfj"
+      }
+    }
+  ]
+}

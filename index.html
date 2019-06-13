@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
+    <title>index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="vue-app" class="container">
+        <div v-if="div == 0">
+            <div id="topBanner">
+                <div id="chatButton">
+                    <div v-on:click="div = 2">
+                        <p>CHAT</p>
+                    </div>
+                </div>
+                <div id="mailToButton">
+                    <a href="mailto:nysl@hotmail.com?">
+                        <p>CONTACT US</p>
+                    </a>
+                </div>
+            </div>
+            <div class="page1Container">
+                <div id="indexMain"></div>
+                <p class="title">NYSL APP</p>
+                <div>
+                    <button v-on:click="div = 3" class="button">Upcoming Matches</button>
+                </div>
+                <div>
+                    <button v-on:click="div = 1" class="button">Standings / Teams</button>
+                </div>
+                <div>
+                    <button v-on:click="div = 4" class="button">Results</button>
+                </div>
+                <div id="upcomingEvents"></div>
+
+                <h6> August 4: NYSL Fundraiser </h6>
+                <h6> August 16: Season Kick-off: Meet the Teams</h6>
+                <h6>September 1: First Game of the Season (Check Game Schedule for details</h6>
+            </div>
+        </div>
+        <div v-if="div == 2">
+            <div id="topBanner">
+                <div id="chatButton">
+                    <div v-on:click="div = 2">
+                        <p>CHAT</p>
+                    </div>
+                </div>
+                <div id="mailToButton">
+                    <a href="mailto:nysl@hotmail.com?">
+                        <p>CONTACT US</p>
+                    </a>
+                </div>
+            </div>
+            <div class="page1Container">
+                <p class="title">LOG IN</p>
+                <input type="text" placeholder="username" />
+                <input type="text" placeholder="password" />
+                <a href="#"> <button class="logButton">LOG IN</button> </a>
+                <a href="#" class="createAccount"> Create an account</a>
+
+
+                <div id="bottomButtons">
+                    <button v-on:click="div = 1" class="downButtons">Teams</button>
+                    <button v-on:click="div = 0" class="downButtons">Home</button>
+                    <button v-on:click="div = 3" class="downButtons">Upcoming Matches</button> </a>
+                </div>
+            </div>
+        </div>
+        <div v-if="div == 3">
+            <div id="topBanner">
+                <div id="chatButton">
+                    <div v-on:click="div = 2">
+                        <p>CHAT</p>
+                    </div>
+                </div>
+                <div id="mailToButton">
+                    <a href="mailto:nysl@hotmail.com?">
+                        <p>CONTACT US</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="page1Container">
+                <div id="matchday">
+                    <p class="title">UPCOMING MATCHES
+                        <p>
+                            <div>
+                                <p> MATCHDAY 1 </p>
+                            </div>
+                            <div>
+
+                                <p v-on:click="div = 5" id="results1"> team a vs team b</p>
+
+                            </div>
+                            <div>
+
+                                <p v-on:click="div = 5" id="results2"> team c vs team d </p>
+
+                            </div>
+                            <div>
+
+                                <p v-on:click="div = 5" id="results3"> team e vs team f </p>
+
+                            </div>
+                            <div>
+
+                                <p v-on:click="div = 5" id="results4"> team g vs team h </p>
+
+                            </div>
+                </div>
+                <div>
+                    <a href=""> <button class="previousBttn"> last match</button> </a>
+                    <a href=""> <button class="nextBttn"> next match</button> </a>
+                </div>
+
+
+                <div id="bottomButtons">
+                    <button v-on:click="div = 1" class="downButtons">Teams</button>
+                    <button v-on:click="div = 0" class="downButtons">Home</button>
+                </div>
+            </div>
+        </div>
+        <div v-if="div ==1">
+            <div id="topBanner">
+                <div id="chatButton">
+                    <div v-on:click="div = 2">
+                        <p>CHAT</p>
+                    </div>
+                </div>
+                <div id="mailToButton">
+                    <a href="mailto:nysl@hotmail.com?">
+                        <p>CONTACT US</p>
+                    </a>
+                </div>
+            </div>
+            <div class="page1Container">
+                <table class="tabla1">
+                    <thead>
+                        <tr class="tabtit">
+                            <th> Team</th>
+                            <th>MP</th>
+                            <th> GP</th>
+                            <th>GW</th>
+                            <th>GT</th>
+                            <th>GL</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>AVG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>12 </td>
+                            <td>10 </td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>45</td>
+                            <td>31</td>
+                            <td>14</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="tabla2">
+                    <thead>
+                        <tr class="tabtit">
+                            <th> PLAYER</th>
+                            <th>TEAM</th>
+                            <th> M</th>
+                            <th>G</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>PEPO </td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>PEPO </td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>PEPO </td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>PEPO </td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td> TEAM A</td>
+                            <td>PEPO </td>
+                            <td>4</td>
+                            <td>3</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div id="bottomButtons">
+                    <button v-on:click="div = 0" class="downButtons">Home</button>
+                    <button v-on:click="div = 3" class="downButtons">Upcoming Matches</button>
+                </div>
+            </div>
+        </div>
+        <div v-if="div == 4">
+            <div id="topBanner">
+                <div id="chatButton">
+                    <div v-on:click="div = 2">
+                        <p>CHAT</p>
+                    </div>
+                </div>
+                <div id="mailToButton">
+                    <a href="mailto:nysl@hotmail.com?">
+                        <p>CONTACT US</p>
+                    </a>
+                </div>
+            </div>
+            <div class="page1Container">
+                <div>
+                    <p class="title"> RESULTS</p>
+                    <div>
+                        <p id="results"> MATCHDAY 1 </p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p id="results1"> team a vs team b</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p id="results2"> team c vs team d </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p id="results3"> team e vs team f </p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p id="results4"> team g vs team h </p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <a href=""> <button class="previousBttn"> last match</button> </a>
+                    <a href=""> <button class="nextBttn"> next match</button> </a>
+                </div>
+
+
+                <div id="bottomButtons">
+                    <button v-on:click="div = 1" class="downButtons">Teams</button>
+                    <button v-on:click="div = 0" class="downButtons">Home</button>
+                </div>
+            </div>
+        </div>
+        <div v-if="div == 5">
+            <div id="topBanner">
+                <div id="chatButton">
+                    <div v-on:click="div = 2">
+                        <p>CHAT</p>
+                    </div>
+                </div>
+                <div id="mailToButton">
+                    <a href="mailto:nysl@hotmail.com?">
+                        <p>CONTACT US</p>
+                    </a>
+                </div>
+            </div>
+            <div class="page1Container">
+                <div>
+                    <p class="title"> NEXT MATCH</p>
+                    <div>
+                        <p id="results"> MATCHDAY </p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p id="results1"> TEAM A</p>
+                        </a>
+                    </div>
+                    <div>
+
+                        <p id="results2"> VS </p>
+
+                    </div>
+                    <div>
+                        <a href="#">
+                            <p id="results3"> TEAM B</p>
+                        </a>
+                    </div>
+                    <div>
+
+                        <iframe width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    </div>
+                    <div>
+                        <p>dia y hora</p>
+                    </div>
+                </div>
+                <div id="bottomButtons">
+                    <button v-on:click="div = 1" class="downButtons">Teams</button>
+                    <button v-on:click="div = 0" class="downButtons">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

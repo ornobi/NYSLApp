@@ -1,0 +1,121 @@
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.page1Container {
+    background-color: lightgreen;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 500px;
+}
+
+#topBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: yellow;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 13px;
+    border-bottom-style: double;
+    border-bottom-color: black;
+    border-top-style: double;
+    border-top-color: black;
+}
+
+#topBanner p {
+    margin-top: 15px;
+    font-size: 15px;
+    color: black;
+    font-weight: 800
+}
+
+#indexMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    min-width: 300px;
+}
+
+.page1Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.page1Container input {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    min-width: 50%;
+}
+
+#bottomButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logButton {
+    margin-bottom: 20px;
+}
+
+.downButtons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 100px;
+    min-height: 50px;
+    font-size: 10px;
+}
+
+.nextBttn,
+.previousBttn {
+    min-width: 100px;
+}
+
+h6 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.createAccount {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.far {
+    margin-top: 20px;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+td {
+    font-size: 11px;
+    padding: 4px
+}
+
+th {
+    font-size: 12px;
+}
